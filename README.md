@@ -4,6 +4,7 @@ The Portfolio website that display my projects - year, team, tools, objective an
 Built using HTML5, [Vue](https://vuejs.org/), AJAX and Sass.
 
 [Website](http://www.hiensite.ca/)
+
 Because there are some errors in the process of deployment, the site won't work until the next 24h, which is Wednesday afternoon. I am apologize for that.
 
 ## Team
