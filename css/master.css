@@ -1,0 +1,603 @@
+/*fonts*/
+@font-face {
+  font-family: 'Raleway Light';
+  src: url("Raleway-Light.woff2") format("woff2"), url("Raleway-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Raleway Bold';
+  src: url("Raleway-Bold.woff2") format("woff2"), url("Raleway-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Mohave Bold';
+  src: url("Mohave-Bold.woff2") format("woff2"), url("Mohave-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Mohave Light';
+  src: url("Mohave-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Baskervville';
+  src: url("Baskervville-Italic.woff2") format("woff2"), url("Baskervville-Italic.woff") format("woff");
+}
+
+.hidden {
+  display: none;
+}
+
+main {
+  font-family: "Raleway Light";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+main header {
+  margin: 0 auto;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 80px;
+}
+
+main header #mainLogo {
+  width: 80px;
+  margin-top: 15px;
+  margin-right: 20px;
+}
+
+@media (min-width: 768px) {
+  main header {
+    width: 80%;
+  }
+}
+
+main .hello {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 3px solid #262687;
+  margin: 0 auto;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+main .hello img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  main .hello img {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .hello {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+main .recentWork {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .recentWork h2 {
+  text-align: center;
+  font-family: "Raleway Bold";
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  color: #fa82aa;
+}
+
+@media (min-width: 1024px) {
+  main .recentWork h2 {
+    font-size: 2em;
+  }
+}
+
+main .recentWork .workDiv {
+  margin: 0 auto;
+  width: 90%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+}
+
+@media (min-width: 768px) {
+  main .recentWork .workDiv {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .recentWork .workDiv {
+    width: 60%;
+  }
+}
+
+main .recentWork .workDiv .work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 3px solid #fa82aa;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 40px 0px;
+  margin-bottom: 30px;
+}
+
+main .recentWork .workDiv .work a img {
+  margin: 0 auto;
+  width: 100%;
+}
+
+main .recentWork .workDiv .work .summary h3 {
+  font-family: "Raleway Bold";
+  font-size: 1.5em;
+  line-height: 30px;
+  color: #fa82aa;
+  margin-top: 30px;
+  padding: 5px 40px;
+}
+
+main .recentWork .workDiv .work .summary h4 {
+  font-family: "Mohave Light";
+  margin-top: auto;
+  color: #fa82aa;
+  padding-left: 40px;
+}
+
+main .recentWork .workDiv .work:hover {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  background-color: #fae0ed;
+  border: none;
+}
+
+main .recentWork .workDiv .work:hover h3 {
+  background-color: #262687;
+  color: #fae0ed;
+}
+
+main .recentWork .workDiv .work:hover h4 {
+  color: #262687;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.pj-button-modifier {
+  text-decoration: none;
+}
+
+.pj-data {
+  display: none;
+  width: 0%;
+}
+
+.show-pj {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  background-color: white;
+  padding: 50px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .show-pj {
+    padding: 100px;
+  }
+}
+
+.show-pj h3 {
+  font-size: 2em;
+  font-family: "Raleway Bold";
+  color: #262687;
+  line-height: 30px;
+}
+
+.show-pj .category {
+  font-family: "Mohave Light";
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+
+.show-pj .close-lb {
+  float: right;
+  color: #262687;
+  margin-right: 30px;
+  cursor: pointer;
+  font-size: 2em;
+  opacity: 0.5;
+  border: 3px solid #262687;
+  border-radius: 40px;
+  padding: 10px 15px 15px 15px;
+}
+
+.show-pj .close-lb:hover {
+  opacity: 1;
+}
+
+.show-pj .pjInfo {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.show-pj .pjInfo h4 {
+  font-family: "Mohave Light";
+  font-size: 1.5em;
+  color: #fa82aa;
+  margin-bottom: 10px;
+}
+
+.show-pj .pjInfo p {
+  margin-right: 40px;
+}
+
+.show-pj .pjMedia {
+  margin-bottom: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.show-pj .pjMedia img, .show-pj .pjMedia video {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+  .show-pj .pjMedia img, .show-pj .pjMedia video {
+    width: 80%;
+  }
+}
+
+#mainNav {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+#mainNav a {
+  color: #262687;
+  font-family: 'Raleway Bold';
+  font-size: 1.2em;
+  text-decoration: none;
+  margin-right: 20px;
+  padding-bottom: 8px;
+}
+
+#mainNav a:hover {
+  color: #fa82aa;
+  border-bottom: 3px solid #fa82aa;
+}
+
+.contactPage {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactPage h3 {
+  padding: 30px;
+  background-color: #fa82aa;
+  width: 60%;
+  font-family: "Raleway Bold";
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  line-height: 29px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1024px) {
+  .contactPage h3 {
+    width: 60%;
+  }
+}
+
+.contactPage .contactForm {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactPage .contactForm form {
+  width: 70%;
+  margin: 0 auto;
+  font-family: "Mohave Light";
+  color: #262687;
+  font-size: 1.2em;
+  padding-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1024px) {
+  .contactPage .contactForm form {
+    width: 60%;
+  }
+}
+
+.contactPage .contactForm form p {
+  margin-bottom: 30px;
+}
+
+.contactPage .contactForm form input, .contactPage .contactForm form textarea {
+  font-family: "Raleway Light";
+  width: 100%;
+  border-radius: 5px;
+  height: 40px;
+  border: 2px solid #262687;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+.contactPage .contactForm form textarea {
+  height: 140px;
+  border: 2px solid #262687;
+}
+
+.contactPage .contactForm form button {
+  background-color: #fa82aa;
+  color: white;
+  font-family: "Raleway Bold";
+  font-size: 1.1em;
+  padding: 10px 20px;
+  border: none;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.contactPage .contactForm form button:hover {
+  background-color: #262687;
+  color: #fae0ed;
+}
+
+.aboutPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px 40px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .aboutPage {
+    width: 65%;
+  }
+}
+
+.aboutPage h2 {
+  padding: 30px;
+  background-color: #fa82aa;
+  font-family: "Raleway Bold";
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  line-height: 29px;
+  margin: 0 auto;
+  width: 93%;
+}
+
+.aboutPage .intro p {
+  padding: 30px;
+}
+
+.aboutPage .skillset {
+  background-color: #fae0ed;
+  border-radius: 10px;
+  margin: 0px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutPage .skillset h3 {
+  font-family: "Raleway Bold";
+  font-size: 1.3em;
+  text-align: center;
+  margin-top: 30px;
+  color: #262687;
+}
+
+.aboutPage .skillset .skillDiv {
+  margin: 0 auto;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .aboutPage .skillset .skillDiv {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.aboutPage .skillset .skillDiv .skill {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.aboutPage .skillset .skillDiv .skill h4 {
+  font-family: "Mohave Light";
+  font-size: 1.3em;
+  color: #fa82aa;
+  margin-bottom: 10px;
+}
+
+.aboutPage .skillset .skillDiv .skill ul li {
+  font-size: 1em;
+}
+
+.aboutPage .process {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.aboutPage .process img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #262687;
+  padding: 50px;
+  margin-top: 60px;
+}
+
+footer .footer {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 40px;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+footer .footer h3 {
+  color: #fae0ed;
+  font-family: "Mohave Bold";
+  line-height: 35px;
+  font-size: 2em;
+  margin: 30px 0px;
+}
+
+footer .footer p {
+  color: white;
+  margin: 0px 60px 30px;
+}
+
+footer .footer .socialMedia {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: white;
+  padding: 10px 0px;
+}
+
+footer .footer .socialMedia #icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 0 auto;
+}
+
+footer .footer .socialMedia #icons img {
+  width: 40px;
+  padding: 0px 5px;
+}
+/*# sourceMappingURL=master.css.map */

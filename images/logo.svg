@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="573" height="345" viewBox="0 0 573 345">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 300px;
+        filter: url(#filter);
+        font-family: Mohave;
+        font-weight: 700;
+      }
+    </style>
+    <filter id="filter" x="51" y="56" width="471" height="225" filterUnits="userSpaceOnUse">
+      <feImage preserveAspectRatio="none" x="51" y="56" width="471" height="225" result="image" xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iNDcxIiBoZWlnaHQ9IjIyNSIgdmlld0JveD0iMCAwIDQ3MSAyMjUiPgogIDxkZWZzPgogICAgPHN0eWxlPgogICAgICAuY2xzLTEgewogICAgICAgIGZpbGw6IHVybCgjbGluZWFyLWdyYWRpZW50KTsKICAgICAgfQogICAgPC9zdHlsZT4KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0ibGluZWFyLWdyYWRpZW50IiB4MT0iNDcxIiB5MT0iMTEyLjUiIHgyPSIwIiB5Mj0iMTEyLjUiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwIiBzdG9wLWNvbG9yPSIjZmE4MmFhIi8+CiAgICAgIDxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzI2MjY4NyIvPgogICAgPC9saW5lYXJHcmFkaWVudD4KICA8L2RlZnM+CiAgPHJlY3QgY2xhc3M9ImNscy0xIiB3aWR0aD0iNDcxIiBoZWlnaHQ9IjIyNSIvPgo8L3N2Zz4K"/>
+      <feComposite result="composite" operator="in" in2="SourceGraphic"/>
+      <feBlend result="blend" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Artboard_1" data-name="Artboard 1">
+    <text id="HIEN" class="cls-1" x="30.313" y="55.976">HIEN</text>
+  </g>
+</svg>

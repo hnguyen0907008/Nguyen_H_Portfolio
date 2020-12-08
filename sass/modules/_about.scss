@@ -1,0 +1,81 @@
+.aboutPage{
+    display: flex;
+    flex-direction: column;
+    margin: 0px 40px;
+    margin: 0 auto;
+    width: 100%;
+    @include tablet{
+        width: 65%;
+    }
+    h2{
+        padding: 30px;
+        background-color: $pink;
+        font-family: $main-title;
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        line-height: 29px;
+        margin: 0 auto;
+        width: 93%;
+    }
+
+    .intro{
+        p{
+            padding: 30px;
+        }
+    }
+
+    .skillset{
+        background-color: $lightpink;
+        @include roundCorners(10px);
+        margin: 0px 30px;
+        display: flex;
+        flex-direction: column;
+        h3{
+            font-family: $main-title;
+            font-size: 1.3em;
+            text-align: center;
+            margin-top: 30px;
+            color: $blue;
+        }
+
+        .skillDiv{
+            margin: 0 auto;
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            @include tablet{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+            }
+
+            .skill{
+                text-align: center;
+                margin-bottom: 30px;
+    
+                h4{
+                    font-family: $sec-font;
+                    font-size: 1.3em;
+                    color: $pink;
+                    margin-bottom: 10px;
+                }
+                ul{
+                    li{
+                        font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .process{
+        display: flex;
+        flex-direction: column;
+        img{
+            width: 100%;
+            margin: 0 auto;
+        }
+    }
+}

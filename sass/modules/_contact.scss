@@ -1,0 +1,74 @@
+.contactPage{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    h3{
+        padding: 30px;
+        background-color: $pink;
+        width: 60%;
+        font-family: $main-title;
+        color: white;
+        text-align: center;
+        font-size: 2em;
+        line-height: 29px;
+        margin: 0 auto;
+        @include desktop{
+            width: 60%;
+        }
+    }
+
+    .contactForm{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        form{
+            width: 70%;
+            margin: 0 auto;
+            font-family: $sec-font;
+            color: $blue;
+            font-size: 1.2em;
+            padding-top: 30px;
+            display: flex;
+            flex-direction: column;
+            @include desktop{
+                width: 60%;
+            }
+
+            p{
+                margin-bottom: 30px;
+            }
+
+            input, textarea{
+                font-family: $main-font;
+                width: 100%;
+                @include roundCorners(5px);
+                height: 40px;
+                border: 2px solid $blue;
+                margin-top: 10px;
+                font-size: 1em;
+            }
+
+            textarea{
+                height: 140px;
+                border: 2px solid $blue;
+            }
+
+            button{
+                background-color: $pink;
+                color: white;
+                font-family: $main-title;
+                font-size: 1.1em;
+                padding: 10px 20px;
+                border: none;
+                margin: 0 auto;
+                @include roundCorners(5px);
+            }
+
+            button:hover{
+                background-color: $blue;
+                color: $lightpink;
+            }
+        }
+    }
+}

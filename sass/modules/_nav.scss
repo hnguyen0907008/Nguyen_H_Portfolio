@@ -1,0 +1,16 @@
+#mainNav {
+    a {
+        color: $blue;
+        font-family: 'Raleway Bold';
+        font-size: 1.2em;
+        text-decoration: none;
+        margin-right: 20px;
+        padding-bottom: 8px;
+    }
+    a:hover {
+        color:$pink;
+        border-bottom: 3px solid $pink;
+    }
+    margin-top: 30px;
+    margin-left: 20px;
+}

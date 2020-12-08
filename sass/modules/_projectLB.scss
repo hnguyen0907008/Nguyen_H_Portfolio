@@ -1,0 +1,83 @@
+
+.pj-button-modifier { text-decoration: none; }
+
+.pj-data { 
+    display: none; 
+    width: 0%;
+}
+
+.show-pj { 
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    background-color: white;
+    padding: 50px;
+    margin: 0 auto;
+
+    @include desktop{
+        padding: 100px;
+    }
+
+    h3{
+        font-size: 2em;
+        font-family: $main-title;
+        color: $blue;
+        line-height: 30px;
+    }
+
+    .category{
+        font-family: $sec-font;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .close-lb{
+        float: right;
+        color: $blue;
+        margin-right: 30px;
+        cursor: pointer;
+        font-size: 2em;
+        opacity: 0.5; 
+        border: 3px solid $blue;
+        @include roundCorners(40px);
+        padding: 10px 15px 15px 15px;
+    }
+
+    .close-lb:hover { 
+        opacity: 1; 
+    }
+
+    .pjInfo{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        h4{
+            font-family: $sec-font;
+            font-size: 1.5em;
+            color: $pink;
+            margin-bottom: 10px;
+        }
+        p{
+            margin-right: 40px;
+        }
+    }
+
+    .pjMedia{
+        margin-bottom: 40px;
+        display: flex;
+        flex-direction: column;
+        img, video{
+            width: 90%;
+            margin: 0 auto;
+            padding-bottom: 20px ;
+            @include desktop{
+                width: 80%;
+            }
+        }
+    }
+}
+

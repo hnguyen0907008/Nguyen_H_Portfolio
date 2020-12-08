@@ -1,0 +1,136 @@
+.hidden {display: none;}
+
+main
+{   
+    font-family: $main-font;
+    display: flex; flex-direction: column;
+    font-size: 18px;
+    line-height: 21px;
+
+    header{
+        margin: 0 auto;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 80px;
+        #mainLogo{
+            width: 80px;
+            margin-top: 15px;
+            margin-right: 20px;
+        }
+
+        @include tablet{
+            width: 80%;
+        }
+    }
+
+    //Welcome
+    .hello {
+        display: flex; flex-direction: column;
+        border: 3px solid $blue;
+        margin: 0 auto;
+        margin: 20px;
+        img{
+            margin: 0 auto;
+            width: 100%;
+            @include desktop{
+                width: 80%;
+            }
+        }
+        @include desktop{
+            width: 80%;
+            margin: 0 auto;
+        }
+        @include roundCorners(10px);
+    }
+
+    //Recent Works
+    .recentWork{
+        h2{
+            text-align: center;
+            font-family: $main-title;
+            font-size: 1.5em;
+            margin-bottom: 30px;
+            margin-top: 30px;
+            color: $pink;
+
+            @include desktop{
+                font-size: 2em;
+            }
+        }
+        display: flex;
+        flex-direction: column;
+        .workDiv{
+            margin: 0 auto;
+            width: 90%;
+            display: grid;
+            grid-gap: 30px;
+            
+
+            @include tablet{
+                width: 80%;
+            }
+
+            @include desktop{
+                width: 60%;
+            }
+    
+            .work{
+                display: flex;
+                flex-direction: column;
+                border: 3px solid $pink;
+                width: 90%;
+                margin: 0 auto;  
+                @include roundCorners(10px);
+                padding: 40px 0px;
+                margin-bottom: 30px;
+
+                a{
+                    img{
+                        margin: 0 auto;
+                        width: 100%;
+                    }
+                }
+
+                .summary{
+                    h3{
+                        font-family: $main-title;
+                        font-size: 1.5em;
+                        line-height: 30px;
+                        color: $pink;
+                        margin-top: 30px;
+                        padding: 5px 40px;
+                        
+                    }
+    
+                    h4{
+                        font-family: $sec-font;
+                        margin-top: auto;
+                        color: $pink;
+                        padding-left: 40px;
+                    }
+                }
+            }
+
+            .work:hover{
+                transform: scale(0.97);
+                background-color: $lightpink;
+                border: none;
+                
+                h3{
+                    background-color: $blue;
+                    color: $lightpink;
+                }
+                h4{
+                    color: $blue;
+                }
+            }
+        }
+    }
+
+}
+    
+
+html {scroll-behavior: smooth;}
+
